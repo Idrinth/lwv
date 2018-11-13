@@ -1,0 +1,25 @@
+h1 > a {
+    color: #000;
+    text-decoration: none;
+}
+ul {
+    line-height: 1.5em;
+    font-size: 1em;
+}
+ul > li > ul,
+ul > li > ul > li {
+    display:inline;
+    width:auto;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    padding:2px;
+}
+ul > li > ul > li {
+    background-color: #eee;
+    border-radius: 3px;
+    margin: 2px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
