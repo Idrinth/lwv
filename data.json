@@ -138,11 +138,11 @@
     },
     "https://www.youtube.com/watch?v=cgvB2wWvi8M": {
         "name": "No estimates",
-        "tags": {
+        "tags": [
             "estimates",
             "agile",
             "talk"
-        },
+        ],
         "source": "AgileIndia",
         "persons": [
             "Vasco Duarte"
