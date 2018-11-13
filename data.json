@@ -3,7 +3,9 @@
         "name": "How To Approach Refactoring",
         "tags": [
             "refactoring",
-            "talk",
+            "talk"
+        ],
+        "persons": [
             "Venkat Subramaniam"
         ]
     },
@@ -12,7 +14,9 @@
         "tags": [
             "naming",
             "talk",
-            "architecture",
+            "architecture"
+        ],
+        "persons": [
             "Kevlin Henney"
         ]
     },
@@ -21,19 +25,21 @@
         "tags": [
             "talk",
             "testing",
-            "architecture",
-            "Clean Code Talks"
-        ]
+            "architecture"
+        ],
+        "source": "Clean Code Talks"
     },
     "https://www.youtube.com/watch?v=wCx_6kOo99M": {
         "name": "Test Smells and Fragrances",
         "tags": [
             "talk",
-            "Kevlin Henney",
             "naming",
-            "testing",
-            "DevWeek"
-        ]
+            "testing"
+        ],
+        "persons": [
+            "Kevlin Henney"
+        ],
+        "source": "DevWeek"
     },
     "http://code.iamkate.com/articles/xampp-version-history-apache-mysql-php/": {
         "name": "Xampp version history",
@@ -73,7 +79,9 @@
         "tags": [
             "refactoring",
             "talk",
-            "testing",
+            "testing"
+        ],
+        "persons": [
             "Woody Zuill",
             "Llewellyn Falco"
         ]
@@ -81,20 +89,47 @@
     "https://www.youtube.com/watch?v=z43bmaMwagI": {
         "name": "If considered harmful: How to eradicate 95% of all your bugs in one simple step",
         "tags": [
-            "Jules May",
-            "DevWeek",
             "architecture",
             "talk"
-        ]
+        ],
+        "persons": [
+            "Jules May"
+        ],
+        "source": "DevWeek"
     },
     "https://www.youtube.com/watch?v=B3b4tremI5o": {
         "name": "Small Is Beautiful",
         "tags": [
-            "Kevlin Henney",
-            "GoTo Conference",
             "legacy",
             "talk",
             "architecture"
-        ]
+        ],
+        "persons": [
+            "Kevlin Henney"
+        ],
+        "source": "GOTO Conference"
+    },
+    "https://www.youtube.com/watch?v=4E3xfR6IBII": {
+        "name": "Not Just Code Monkeys",
+        "tags": [
+            "agile",
+            "mindset"
+        ],
+        "persons": [
+            "Martin Fowler"
+        ],
+        "source": "GOTO Conference"
+    },
+    "https://www.youtube.com/watch?v=vHl7EZ5o0uY": {
+        "name": "Developing a Chaos Architecture Mindset",
+        "tags": [
+            "recovery",
+            "operations",
+            "architecture"
+        ],
+        "persons": [
+            "Adrian Cockcroft"
+        ],
+        "source": "GOTO Conferences"
     }
 }

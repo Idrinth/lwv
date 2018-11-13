@@ -1,3 +1,8 @@
+body {
+    min-height: 100%;
+    width:100%;
+    background: #eee;
+}
 h1 > a {
     color: #000;
     text-decoration: none;
@@ -5,6 +10,9 @@ h1 > a {
 ul {
     line-height: 1.5em;
     font-size: 1em;
+}
+ul > li {
+    padding: 0.2em;
 }
 ul > li > ul,
 ul > li > ul > li {
@@ -16,10 +24,19 @@ ul > li > ul > li {
     padding:2px;
 }
 ul > li > ul > li {
-    background-color: #eee;
-    border-radius: 3px;
-    margin: 2px;
-    box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
-    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #eee;
+    margin: 4px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.15);
     cursor: pointer;
+    padding: 0.2em;
+}
+ul > li > ul > li.tag {
+    background-color: #007;
+}
+ul > li > ul > li.person {
+    background-color: #555;
+}
+ul > li > ul > li.source {
+    background-color: #700;
 }

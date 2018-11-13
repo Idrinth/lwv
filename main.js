@@ -38,17 +38,29 @@
                 return a;
             })());
             li.appendChild((() => {
+                const appendElements = (list, className, listElement) => {
+                    if (!Array.isArray(list)) {
+                        return;
+                    }
+                    list.sort(function (a, b) {
+                        return (a.toLowerCase()).localeCompare(b.toLowerCase());
+                    });
+                    for (const tag of list) {
+                        if (!tag) {
+                            continue;
+                        }
+                        listElement.appendChild((() => {
+                            let item = document.createElement('li');
+                            item.setAttribute('class', className);
+                            item.appendChild(document.createTextNode(tag));
+                            return item;
+                        })());
+                    }
+                };
                 let tags = document.createElement('ul');
-                response[url].tags.sort(function (a, b) {
-                    return (a.toLowerCase()).localeCompare(b.toLowerCase());
-                });
-                for (const tag of response[url].tags) {
-                    tags.appendChild((() => {
-                        let item = document.createElement('li');
-                        item.appendChild(document.createTextNode(tag));
-                        return item;
-                    })());
-                }
+                appendElements(response[url].tags, 'tag', tags);
+                appendElements(response[url].persons, 'person', tags);
+                appendElements([response[url].source], 'source', tags);
                 return tags;
             })());
             document.getElementById('main').appendChild(li);
