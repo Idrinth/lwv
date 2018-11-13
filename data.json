@@ -115,7 +115,8 @@
         "name": "Not Just Code Monkeys",
         "tags": [
             "agile",
-            "mindset"
+            "mindset",
+            "talk"
         ],
         "persons": [
             "Martin Fowler"
@@ -127,11 +128,24 @@
         "tags": [
             "recovery",
             "operations",
-            "architecture"
+            "architecture",
+            "talk"
         ],
         "persons": [
             "Adrian Cockcroft"
         ],
         "source": "GOTO Conferences"
+    },
+    "https://www.youtube.com/watch?v=cgvB2wWvi8M": {
+        "name": "No estimates",
+        "tags": {
+            "estimates",
+            "agile",
+            "talk"
+        },
+        "source": "AgileIndia",
+        "persons": [
+            "Vasco Duarte"
+        ]
     }
 }
