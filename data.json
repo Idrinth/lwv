@@ -134,7 +134,7 @@
         "persons": [
             "Adrian Cockcroft"
         ],
-        "source": "GOTO Conferences"
+        "source": "GOTO Conference"
     },
     "https://www.youtube.com/watch?v=cgvB2wWvi8M": {
         "name": "No estimates",
@@ -146,6 +146,129 @@
         "source": "AgileIndia",
         "persons": [
             "Vasco Duarte"
+        ]
+    },
+    "https://www.youtube.com/watch?v=2zYxWEZ0gYg": {
+        "name": "Why Scaling Agile Doesn't Work",
+        "tags": [
+            "agile",
+            "requirements",
+            "enterprise software",
+            "continous integration",
+            "talk"
+        ],
+        "source": "GOTO Conference",
+        "persons": [
+            "Jez Humble"
+        ]
+    },
+    "https://www.youtube.com/watch?v=fF7qEa4Pklk": {
+        "name": "Words of Wisdom on Coding",
+        "tags": [
+            "clean code",
+            "architecture",
+            "class design",
+            "talk"
+        ],
+        "source": "C++Now",
+        "persons": [
+            "Tony Van Eerd"
+        ]
+    },
+    "https://www.youtube.com/watch?v=FyCYva9DhsI": {
+        "name": "Clean Coders Hate What Happens to Your Code When You Use These Enterprise Programming Tricks",
+        "tags": [
+            "clean code",
+            "enterprise software",
+            "architecture",
+            "naming",
+            "refactoring",
+            "talk"
+        ],
+        "source": "NDC Conference",
+        "persons": [
+            "Kevlin Henney"
+        ]
+    },
+    "https://www.youtube.com/watch?v=SLWpMGs1E9E": {
+        "name": "Actionable Tactics for Leveling Up Junior Devs",
+        "source": "RailsConf",
+        "tags": [
+            "teaching",
+            "training",
+            "talk",
+            "enterprise software"
+        ],
+        "persons": [
+            "Sumeet Jain"
+        ]
+    },
+    "https://www.youtube.com/watch?v=CXyNZYDO07Q": {
+        "name": "Technical debt isn't technical",
+        "source": "NDC Conference",
+        "tags": [
+            "technical debt",
+            "talk",
+            "organization",
+            "architecture"
+        ],
+        "persons": [
+            "Einar W. Høst"
+        ]
+    },
+    "https://www.youtube.com/watch?v=VZePNGQojfA": {
+        "name": "Stability Patterns & Antipatterns",
+        "source": "GOTO Conference",
+        "tags": [
+            "stability",
+            "architecture",
+            "talk",
+            "operations",
+            "enterprise software"
+        ],
+        "persons": [
+            "Michael T. Nygard"
+        ]
+    },
+    "https://www.youtube.com/watch?v=12n9E5L6qgs": {
+        "name": "Practical Considerations for Microservice Architectures. Part 1.",
+        "source": "XP Days",
+        "tags": [
+            "architecture",
+            "microservices",
+            "boundaries",
+            "talk",
+            "domain driven design",
+            "stability"
+        ],
+        "persons": [
+            "Sam Newman"
+        ]
+    },
+    "https://www.youtube.com/watch?v=D-xra_X9Nwg": {
+        "name": "Level Up Your Automated Tests",
+        "source": "GOTO Conference",
+        "tags": [
+            "talk",
+            "mindset",
+            "testing",
+            "continous integration"
+        ],
+        "persons": [
+            "Trisha Gee"
+        ]
+    },
+    "https://www.youtube.com/watch?v=pTf5mqOrwvY": {
+        "name": "Building a High-Performance Team is Everyone's Job",
+        "source": "GOTO Conference",
+        "tags": [
+            "talk",
+            "mindset",
+            "agile",
+            "organization"
+        ],
+        "persons": [
+            "Camille Fournier"
         ]
     }
 }
