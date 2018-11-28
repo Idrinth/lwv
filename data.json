@@ -270,5 +270,16 @@
         "persons": [
             "Camille Fournier"
         ]
+    },
+	"https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc": {
+        "name": "Design Patterns in Object Oriented Programming",
+        "tags": [
+            "talk",
+            "design patterns",
+            "agile"
+        ],
+        "persons": [
+            "Christopher Okhravi"
+        ]
     }
 }
