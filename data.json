@@ -274,9 +274,9 @@
 	"https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc": {
         "name": "Design Patterns in Object Oriented Programming",
         "tags": [
-            "talk",
+            "course",
             "design patterns",
-            "agile"
+            "architecture"
         ],
         "persons": [
             "Christopher Okhravi"
