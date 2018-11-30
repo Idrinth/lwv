@@ -271,7 +271,7 @@
             "Camille Fournier"
         ]
     },
-	"https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc": {
+    "https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc": {
         "name": "Design Patterns in Object Oriented Programming",
         "tags": [
             "course",
@@ -280,6 +280,32 @@
         ],
         "persons": [
             "Christopher Okhravi"
+        ]
+    },
+    "https://www.youtube.com/watch?v=lY54TmmEllY": {
+        "name": "Good Design is Imperfect Design",
+        "source": "",
+        "tags": [
+            "talk",
+            "naming",
+            "mindset",
+            "architecture",
+            "design"
+        ],
+        "persons": [
+            "Eric Evans"
+        ]
+    },
+    "https://www.youtube.com/watch?v=Fuac__g928E": {
+        "name": "Microservices and Rules Engines – a blast from the past",
+        "source": "NDC Conference",
+        "tags": [
+            "talk",
+            "architecture",
+            "boundaries"
+        ],
+        "persons": [
+            "Udi Dahan"
         ]
     }
 }
