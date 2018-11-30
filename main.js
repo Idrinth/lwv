@@ -28,7 +28,7 @@
         if(request.readyState !== 4 || request.status !== 200) {
             return;
         }
-        const response = typeof request.response === 'string' ? JSON.parse(request.response) : request.response;
+        const response = typeof request.response === 'string' ? YAML.parse(request.response) : request.response;
         for(const url in response) {
             let li = document.createElement('li');
             li.appendChild((() => {
@@ -74,6 +74,6 @@
             );
         }
     }
-    request.open('get', 'data.json', true);
+    request.open('get', 'data.yml', true);
     request.send();
 })();
