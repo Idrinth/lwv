@@ -214,3 +214,22 @@ https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc:
   - architecture
   persons:
   - Christopher Okhravi
+https://www.youtube.com/watch?v=lY54TmmEllY:
+  name: Good Design is Imperfect Design
+  tags:
+  - talk
+  - naming
+  - mindset
+  - architecture
+  - design
+  persons:
+  - Eric Evans
+https://www.youtube.com/watch?v=Fuac__g928E: 
+  name: Microservices and Rules Engines – a blast from the past
+  source: NDC Conference
+  tags:
+  - talk
+  - architecture
+  - boundaries
+  persons:
+  - Udi Dahan
