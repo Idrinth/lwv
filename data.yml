@@ -233,3 +233,11 @@ https://www.youtube.com/watch?v=Fuac__g928E:
   - boundaries
   persons:
   - Udi Dahan
+https://www.yegor256.com/2018/12/11/unit-testing-anti-patterns.html
+  name: Unit Testing anti-patterns
+  tags:
+  - testing
+  - documentation
+  - architecture
+  persons:
+  - Yegor Bugayenko
