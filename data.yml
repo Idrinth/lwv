@@ -241,3 +241,14 @@ https://www.yegor256.com/2018/12/11/unit-testing-anti-patterns.html:
   - architecture
   persons:
   - Yegor Bugayenko
+https://www.youtube.com/watch?v=Ojsn11XY0X8:
+  name: Dependency Injection and Dependency Inversion in PHP
+  source: PHPNW
+  tags:
+  - php
+  - dependency injection
+  - inversion of control
+  - autowiring
+  - talk
+  persons:
+  - James Mallison
