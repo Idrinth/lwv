@@ -1,6 +1,5 @@
 {
     "verbosity": 3,
-    "blacklist": ["/vendor", "/test"],
     "xml": {
         "validity": true
     },
@@ -8,9 +7,14 @@
         "validity": true
     },
     "json": {
-        "validity": true
+        "validity": true,
+        "mapping": {
+            ".idrinth-cc.json": "https://raw.githubusercontent.com/Idrinth/config-check/master/src/schema.json",
+            "composer.json": "https://getcomposer.org/schema.json"
+        }
     },
     "yaml": {
-        "validity": true
+        "validity": true,
+        "additional-extensions": ["neon", "yml"]
     }
 }
