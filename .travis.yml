@@ -8,6 +8,6 @@ cache:
     - ~/config-check
 install:
 - mkdir /home/travis/config-check || true
-- composer create-project idrinth/config-check --no-dev --working-dir=/home/travis/config-check -q || composer update --no-dev --working-dir=/home/travis/config-check -q
+- composer create-project idrinth/config-check --no-dev --working-dir=/home/travis/config-check || composer update --no-dev --working-dir=/home/travis/config-check
 script:
 - php ~/config-check/check-config -vvv -w
