@@ -1,0 +1,16 @@
+{
+    "verbosity": 3,
+    "blacklist": ["/vendor", "/test"],
+    "xml": {
+        "validity": true
+    },
+    "ini": {
+        "validity": true
+    },
+    "json": {
+        "validity": true
+    },
+    "yaml": {
+        "validity": true
+    }
+}
