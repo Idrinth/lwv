@@ -1,0 +1,21 @@
+{
+    "verbosity": 3,
+    "xml": {
+        "validity": true
+    },
+    "ini": {
+        "validity": true
+    },
+    "json": {
+        "validity": true,
+        "mapping": {
+            ".idrinth-cc.json": "https://raw.githubusercontent.com/Idrinth/config-check/master/src/schema.json",
+            "composer.json": "https://getcomposer.org/schema.json"
+        },
+        "additional-extensions": ["lock"]
+    },
+    "yaml": {
+        "validity": true,
+        "additional-extensions": ["neon", "yml"]
+    }
+}
