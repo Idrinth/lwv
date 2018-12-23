@@ -252,3 +252,12 @@ https://www.youtube.com/watch?v=Ojsn11XY0X8:
   - talk
   persons:
   - James Mallison
+https://www.youtube.com/watch?v=VBfvnKDlZMw:
+  name: JavaScript on the Desktop, Fast and Slow
+  source: dotJS 
+  persons:
+  - Felix Rieseberg
+  tags:
+  - javascript
+  - performance
+  - talk
