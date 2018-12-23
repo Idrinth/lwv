@@ -1,0 +1,7 @@
+language: php
+dist: trusty
+php: 7.2
+git:
+  depth: 3
+install: composer create-project idrinth/config-check --no-dev --working-dir=../config-check -q || composer update  --no-dev --working-dir=../config-check -q
+script: php ../check-config -vvv -w
