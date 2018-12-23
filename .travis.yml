@@ -5,9 +5,9 @@ git:
   depth: 3
 cache:
   directories:
-    - ~/config-check
+    - /home/travis/check
 install:
-- mkdir /home/travis/config-check || true
-- composer create-project --stability=dev --no-dev --working-dir=/home/travis/config-check -- idrinth/config-check . dev-master || composer update --no-dev --working-dir=/home/travis/config-check
+- mkdir /home/travis/check || true
+- composer update --no-dev --working-dir=/home/travis/check || composer create-project --stability=dev --no-dev --working-dir=/home/travis/check -- idrinth/config-check . dev-master
 script:
-- php /home/travis/config-check/check-config -vvv -w
+- php /home/travis/check/check-config -vvv -w
