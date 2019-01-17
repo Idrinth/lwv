@@ -16,6 +16,9 @@
     },
     "yaml": {
         "validity": true,
+        "mapping": {
+            "data.yml": ".data-schema.json"
+        },
         "additional-extensions": ["neon", "yml"]
     }
 }
