@@ -261,6 +261,15 @@ https://www.youtube.com/watch?v=VBfvnKDlZMw:
   - javascript
   - performance
   - talk
+https://www.youtube.com/watch?v=Di-wmjyBQGs:
+  name: Climbing the Abstract Syntax Tree
+  source: Dutch PHP Conference
+  persons:
+  - James Titcumb
+  tags:
+  - ast
+  - php
+  - talk
 https://www.youtube.com/watch?v=CFQBHy8RCpg:
   name: ASTs for Beginners
   persons:
@@ -271,3 +280,4 @@ https://www.youtube.com/watch?v=CFQBHy8RCpg:
   - abstract syntax tree
   - talk
   - introduction
+
