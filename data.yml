@@ -270,3 +270,14 @@ https://www.youtube.com/watch?v=Di-wmjyBQGs:
   - ast
   - php
   - talk
+https://www.youtube.com/watch?v=CFQBHy8RCpg:
+  name: ASTs for Beginners
+  persons:
+  - Kent C. Dodds
+  tags:
+  - javascript
+  - ast
+  - abstract syntax tree
+  - talk
+  - introduction
+
