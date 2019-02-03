@@ -11,7 +11,7 @@
             if (li.nodeName === 'LI') {
                 li.setAttribute('style', 'display:none');
                 for (let tagEl of li.getElementsByTagName('li')) {
-                    if(!tag || tagEl.innerText.replace(' ', '_').toLowerCase() === tag) {
+                    if(!tag || tagEl.innerText.replace(/ /g, '_').toLowerCase() === tag) {
                         li.removeAttribute('style');
                         break;
                     }
