@@ -6,7 +6,7 @@
         }
     });
     function filterForTag(tag) {
-        tag = tag.replace(' ', '_').toLowerCase().replace(/^#/, '');
+        tag = tag.replace(/ /g, '_').toLowerCase().replace(/^#/, '');
         for(let li of document.getElementById('main').children) {
             if (li.nodeName === 'LI') {
                 li.setAttribute('style', 'display:none');
