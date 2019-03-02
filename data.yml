@@ -300,3 +300,14 @@ https://www.youtube.com/watch?v=u1i_pNAYD0s:
   - mindset
   persons:
   - Mike Long
+https://www.youtube.com/watch?v=myQr6VsT2GE:
+  name: 'Performance Optimization: How Do I Go About It?'
+  tags:
+  - php
+  - performance
+  - talk
+  - measure
+  - tool
+  source: PHP UK
+  persons:
+  - Kat Zien
