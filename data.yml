@@ -300,3 +300,14 @@ https://www.youtube.com/watch?v=u1i_pNAYD0s:
   - mindset
   persons:
   - Mike Long
+https://www.youtube.com/watch?v=SBhgteA2szg:
+  name: Acceptance Testing for Continuous Delivery
+  source: GOTO Conference
+  persons:
+  - Dave Farley
+  tags:
+  - talk
+  - testing
+  - architecture
+  - domain specific language
+  - continous delivery
