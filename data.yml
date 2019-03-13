@@ -311,3 +311,15 @@ https://www.youtube.com/watch?v=SBhgteA2szg:
   - architecture
   - domain specific language
   - continous delivery
+https://www.youtube.com/watch?v=myQr6VsT2GE:
+  name: 'Performance Optimization: How Do I Go About It?'
+  tags:
+  - php
+  - performance
+  - talk
+  - optimization
+  - measure
+  - tool
+  source: PHP UK
+  persons:
+  - Kat Zien
