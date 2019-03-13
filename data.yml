@@ -311,3 +311,26 @@ https://www.youtube.com/watch?v=8d2AtAGJPno:
   - design
   persons:
   - Marco Pivetta
+https://www.youtube.com/watch?v=SBhgteA2szg:
+  name: Acceptance Testing for Continuous Delivery
+  source: GOTO Conference
+  persons:
+  - Dave Farley
+  tags:
+  - talk
+  - testing
+  - architecture
+  - domain specific language
+  - continous delivery
+https://www.youtube.com/watch?v=myQr6VsT2GE:
+  name: 'Performance Optimization: How Do I Go About It?'
+  tags:
+  - php
+  - performance
+  - talk
+  - optimization
+  - measure
+  - tool
+  source: PHP UK
+  persons:
+  - Kat Zien
