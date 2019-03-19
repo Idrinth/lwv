@@ -300,6 +300,17 @@ https://www.youtube.com/watch?v=u1i_pNAYD0s:
   - mindset
   persons:
   - Mike Long
+https://www.youtube.com/watch?v=8d2AtAGJPno:
+  name: Extremely Defensive PHP
+  source: PHP South West UK
+  tags:
+  - php
+  - defensive programming
+  - data transfer object
+  - talk
+  - design
+  persons:
+  - Marco Pivetta
 https://www.youtube.com/watch?v=SBhgteA2szg:
   name: Acceptance Testing for Continuous Delivery
   source: GOTO Conference
