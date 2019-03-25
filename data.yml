@@ -334,3 +334,15 @@ https://www.youtube.com/watch?v=myQr6VsT2GE:
   source: PHP UK
   persons:
   - Kat Zien
+https://www.youtube.com/watch?v=oqd9bxy5Hvc:
+  name: Secure Coding Patterns
+  tags:
+  - talk
+  - security
+  - validation
+  - domain objects
+  - domain driven security
+  - architecture
+  source: GOTO Conference
+  persons:
+  - Andreas Hallberg
