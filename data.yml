@@ -334,6 +334,16 @@ https://www.youtube.com/watch?v=myQr6VsT2GE:
   source: PHP UK
   persons:
   - Kat Zien
+https://www.youtube.com/watch?v=86Tt2pW9pv4:
+  name: Introduction to SOLID
+  tags:
+  - talk
+  - solid
+  - design
+  - php
+  source: PHP UK
+  persons:
+  - Gareth Ellis
 https://www.youtube.com/watch?v=oqd9bxy5Hvc:
   name: Secure Coding Patterns
   tags:
