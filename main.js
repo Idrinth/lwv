@@ -29,6 +29,7 @@
             return;
         }
         const response = typeof request.response === 'string' ? YAML.parse(request.response) : request.response;
+        const filters = {person: [], source: [], tag: []};
         for(const url in response) {
             let li = document.createElement('li');
             li.appendChild((() => {
@@ -37,6 +38,23 @@
                 a.appendChild(document.createTextNode(response[url].name));
                 return a;
             })());
+            if (response[url].source && filters.source.indexOf(response[url].source) === -1) {
+                filters.source.push(response[url].source);
+            }
+            if (response[url].tags) {
+                for (const val of response[url].tags) {
+                    if (val && filters.tag.indexOf(val) === -1) {
+                        filters.tag.push(val);
+                    }
+                }
+            }
+            if (response[url].persons) {
+                for (const val of response[url].persons) {
+                    if (val && filters.person.indexOf(val) === -1) {
+                        filters.person.push(val);
+                    }
+                }
+            }
             li.appendChild((() => {
                 const appendElements = (list, className, listElement) => {
                     if (!Array.isArray(list)) {
@@ -51,7 +69,7 @@
                         }
                         listElement.appendChild((() => {
                             let item = document.createElement('li');
-                            item.setAttribute('class', className);
+                            item.setAttribute('class', className+' filter');
                             item.appendChild(document.createTextNode(tag));
                             return item;
                         })());
@@ -64,6 +82,16 @@
                 return tags;
             })());
             document.getElementById('main').appendChild(li);
+        }
+        for (const type in filters) {
+            for (const name of filters[type]) {
+                document.getElementById('filters-'+type).appendChild((() => {
+                    let item = document.createElement('li');
+                    item.setAttribute('class', type+' filter');
+                    item.appendChild(document.createTextNode(name));
+                    return item;
+                })());
+            }
         }
         if (window.location.hash) {
             window.setTimeout(

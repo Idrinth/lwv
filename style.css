@@ -1,6 +1,15 @@
+html {
+    height: 100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
 body {
     min-height: 100%;
     width:100%;
+    margin:0;
+    padding:1em;
+    box-sizing: border-box;
     background: #eee;
 }
 h1 > a {
@@ -23,7 +32,7 @@ ul > li > ul > li {
     overflow:hidden;
     padding:2px;
 }
-ul > li > ul > li {
+.filter {
     border-radius: 4px;
     color: #eee;
     margin: 4px;
@@ -31,12 +40,44 @@ ul > li > ul > li {
     cursor: pointer;
     padding: 0.2em;
 }
-ul > li > ul > li.tag {
+.tag {
     background-color: #007;
 }
-ul > li > ul > li.person {
+.person {
     background-color: #555;
 }
-ul > li > ul > li.source {
+.source {
     background-color: #700;
+}
+aside {
+    border-radius: 4px;
+    position: fixed;
+    right: -10em;
+    width: 12em;
+    height: 30%;
+    padding: 0.5em;
+    overflow-y: scroll;
+    box-shadow: -2px -2px 3px rgba(0,0,0,0.15);
+    border: 1px solid #ddd;
+    background: #eee;
+    box-sizing: border-box;
+}
+aside > ul {
+    margin: 0;
+    padding: 0;
+}
+aside:hover {
+    right: 0;
+}
+aside:nth-of-type(1)
+{
+    top: 4%;
+}
+aside:nth-of-type(2)
+{
+    top: 35%;
+}
+aside:nth-of-type(3)
+{
+    top: 66%;
 }
