@@ -356,3 +356,12 @@ https://www.youtube.com/watch?v=oqd9bxy5Hvc:
   source: GOTO Conference
   persons:
   - Andreas Hallberg
+https://www.youtube.com/watch?v=X0tjziAQfNQ:
+  name: 10 Tips for failing badly at Microservices
+  tags:
+  - microservice
+  - talk
+  - architecture
+  source: Devoxx
+  persons:
+  - David Schmitz
