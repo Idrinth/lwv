@@ -33,6 +33,7 @@ https://www.youtube.com/watch?v=wCx_6kOo99M:
   source: DevWeek
 http://code.iamkate.com/articles/xampp-version-history-apache-mysql-php/:
   name: Xampp version history
+  level: any
   tags:
   - php
   - xampp
@@ -41,18 +42,21 @@ http://code.iamkate.com/articles/xampp-version-history-apache-mysql-php/:
   - tool
 https://phpqa.io/:
   name: PHP Quality Assurance
+  level: any
   tags:
   - php
   - continous integration
   - tool
 https://phpsecurity.readthedocs.io/en/latest/index.html:
   name: 'Survive The Deep End: PHP Security'
+  level: journeyman
   tags:
   - php
   - security
   - documentation
 https://www.owasp.org/index.php/Main_Page:
   name: OWASP
+  level: journeyman
   tags:
   - security
   - wiki
@@ -145,6 +149,7 @@ https://www.youtube.com/watch?v=FyCYva9DhsI:
   - Kevlin Henney
 https://www.youtube.com/watch?v=SLWpMGs1E9E:
   name: Actionable Tactics for Leveling Up Junior Devs
+  level: lead
   source: RailsConf
   tags:
   - teaching
@@ -188,6 +193,7 @@ https://www.youtube.com/watch?v=12n9E5L6qgs:
   - Sam Newman
 https://www.youtube.com/watch?v=D-xra_X9Nwg:
   name: Level Up Your Automated Tests
+  level: journeyman
   source: GOTO Conference
   tags:
   - talk
@@ -198,6 +204,7 @@ https://www.youtube.com/watch?v=D-xra_X9Nwg:
   - Trisha Gee
 https://www.youtube.com/watch?v=pTf5mqOrwvY:
   name: Building a High-Performance Team is Everyone's Job
+  level: any
   source: GOTO Conference
   tags:
   - talk
@@ -208,6 +215,7 @@ https://www.youtube.com/watch?v=pTf5mqOrwvY:
   - Camille Fournier
 https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc:
   name: Design Patterns in Object Oriented Programming
+  level: apprentice
   tags:
   - course
   - design patterns
