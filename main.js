@@ -1,3 +1,5 @@
+/* global YAML */
+
 (() => {
     /**
      * Set all Element's style to display:none if they don't have the given tag
@@ -35,7 +37,7 @@
     /**
      * Retrieve data from data.yml and build page from it
      */
-    (() => {
+    (async () => {
         /* add all tags as clickable items to the list element */
         const appendTags = (/*String[]*/ list, /*String*/ className, /*HTMLElement*/ listElement) => {
             if (!Array.isArray(list)) {
