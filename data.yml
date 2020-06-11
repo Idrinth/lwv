@@ -6,6 +6,7 @@ https://www.youtube.com/watch?v=iGsPeR-SYYo:
   persons:
   - Venkat Subramaniam
   source: AgileIndia
+  level: journeyman
 https://www.youtube.com/watch?v=CzJ94TMPcD8:
   name: Giving code a good name
   tags:
@@ -15,6 +16,7 @@ https://www.youtube.com/watch?v=CzJ94TMPcD8:
   persons:
   - Kevlin Henney
   source: DevWeek
+  level: any
 https://www.youtube.com/watch?v=4F72VULWFvc:
   name: Inheritance, Polymorphism, & Testing
   tags:
@@ -22,6 +24,7 @@ https://www.youtube.com/watch?v=4F72VULWFvc:
   - testing
   - architecture
   source: Clean Code Talks
+  level: journeyman
 https://www.youtube.com/watch?v=wCx_6kOo99M:
   name: Test Smells and Fragrances
   tags:
@@ -31,6 +34,7 @@ https://www.youtube.com/watch?v=wCx_6kOo99M:
   persons:
   - Kevlin Henney
   source: DevWeek
+  level: apprentice
 http://code.iamkate.com/articles/xampp-version-history-apache-mysql-php/:
   name: Xampp version history
   level: any
@@ -69,6 +73,7 @@ https://www.youtube.com/watch?v=aWiwDdx_rdo:
   persons:
   - Woody Zuill
   - Llewellyn Falco
+  level: journeyman
 https://www.youtube.com/watch?v=z43bmaMwagI:
   name: 'If considered harmful: How to eradicate 95% of all your bugs in one simple step'
   tags:
@@ -77,6 +82,7 @@ https://www.youtube.com/watch?v=z43bmaMwagI:
   persons:
   - Jules May
   source: DevWeek
+  level: journeyman
 https://www.youtube.com/watch?v=B3b4tremI5o:
   name: Small Is Beautiful
   tags:
@@ -85,6 +91,7 @@ https://www.youtube.com/watch?v=B3b4tremI5o:
   - architecture
   persons:
   - Kevlin Henney
+  level: lead
   source: GOTO Conference
 https://www.youtube.com/watch?v=4E3xfR6IBII:
   name: Not Just Code Monkeys
@@ -95,6 +102,7 @@ https://www.youtube.com/watch?v=4E3xfR6IBII:
   persons:
   - Martin Fowler
   source: GOTO Conference
+  level: any
 https://www.youtube.com/watch?v=vHl7EZ5o0uY:
   name: Developing a Chaos Architecture Mindset
   tags:
@@ -105,6 +113,7 @@ https://www.youtube.com/watch?v=vHl7EZ5o0uY:
   persons:
   - Adrian Cockcroft
   source: GOTO Conference
+  level: lead
 https://www.youtube.com/watch?v=cgvB2wWvi8M:
   name: No estimates
   tags:
@@ -114,6 +123,7 @@ https://www.youtube.com/watch?v=cgvB2wWvi8M:
   source: AgileIndia
   persons:
   - Vasco Duarte
+  level: lead
 https://www.youtube.com/watch?v=2zYxWEZ0gYg:
   name: Why Scaling Agile Doesn't Work
   tags:
@@ -125,6 +135,7 @@ https://www.youtube.com/watch?v=2zYxWEZ0gYg:
   source: GOTO Conference
   persons:
   - Jez Humble
+  level: lead
 https://www.youtube.com/watch?v=fF7qEa4Pklk:
   name: Words of Wisdom on Coding
   tags:
@@ -135,6 +146,7 @@ https://www.youtube.com/watch?v=fF7qEa4Pklk:
   source: C++Now
   persons:
   - Tony Van Eerd
+  level: apprentice
 https://www.youtube.com/watch?v=FyCYva9DhsI:
   name: Clean Coders Hate What Happens to Your Code When You Use These Enterprise Programming Tricks
   tags:
@@ -147,6 +159,7 @@ https://www.youtube.com/watch?v=FyCYva9DhsI:
   source: NDC Conference
   persons:
   - Kevlin Henney
+  level: journeyman
 https://www.youtube.com/watch?v=SLWpMGs1E9E:
   name: Actionable Tactics for Leveling Up Junior Devs
   level: lead
@@ -158,6 +171,7 @@ https://www.youtube.com/watch?v=SLWpMGs1E9E:
   - enterprise software
   persons:
   - Sumeet Jain
+  level: lead
 https://www.youtube.com/watch?v=CXyNZYDO07Q:
   name: Technical debt isn't technical
   source: NDC Conference
@@ -168,6 +182,7 @@ https://www.youtube.com/watch?v=CXyNZYDO07Q:
   - architecture
   persons:
   - Einar W. Høst
+  level: journeyman
 https://www.youtube.com/watch?v=VZePNGQojfA:
   name: Stability Patterns & Antipatterns
   source: GOTO Conference
@@ -179,6 +194,7 @@ https://www.youtube.com/watch?v=VZePNGQojfA:
   - enterprise software
   persons:
   - Michael T. Nygard
+  level: journeyman
 https://www.youtube.com/watch?v=12n9E5L6qgs:
   name: Practical Considerations for Microservice Architectures. Part 1.
   source: XP Days
@@ -191,6 +207,7 @@ https://www.youtube.com/watch?v=12n9E5L6qgs:
   - stability
   persons:
   - Sam Newman
+  level: master
 https://www.youtube.com/watch?v=D-xra_X9Nwg:
   name: Level Up Your Automated Tests
   level: journeyman
@@ -202,6 +219,7 @@ https://www.youtube.com/watch?v=D-xra_X9Nwg:
   - continous integration
   persons:
   - Trisha Gee
+  level: journeyman
 https://www.youtube.com/watch?v=pTf5mqOrwvY:
   name: Building a High-Performance Team is Everyone's Job
   level: any
@@ -213,6 +231,7 @@ https://www.youtube.com/watch?v=pTf5mqOrwvY:
   - organization
   persons:
   - Camille Fournier
+  level: any
 https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc:
   name: Design Patterns in Object Oriented Programming
   level: apprentice
@@ -232,6 +251,7 @@ https://www.youtube.com/watch?v=lY54TmmEllY:
   - design
   persons:
   - Eric Evans
+  level: journeyman
 https://www.youtube.com/watch?v=Fuac__g928E: 
   name: Microservices and Rules Engines – a blast from the past
   source: NDC Conference
@@ -241,6 +261,7 @@ https://www.youtube.com/watch?v=Fuac__g928E:
   - boundaries
   persons:
   - Udi Dahan
+  level: lead
 https://www.yegor256.com/2018/12/11/unit-testing-anti-patterns.html:
   name: Unit Testing anti-patterns
   tags:
@@ -249,6 +270,7 @@ https://www.yegor256.com/2018/12/11/unit-testing-anti-patterns.html:
   - architecture
   persons:
   - Yegor Bugayenko
+  level: journeyman
 https://www.youtube.com/watch?v=Ojsn11XY0X8:
   name: Dependency Injection and Dependency Inversion in PHP
   source: PHPNW
@@ -260,6 +282,7 @@ https://www.youtube.com/watch?v=Ojsn11XY0X8:
   - talk
   persons:
   - James Mallison
+  level: apprentice
 https://www.youtube.com/watch?v=VBfvnKDlZMw:
   name: JavaScript on the Desktop, Fast and Slow
   source: dotJS 
@@ -269,6 +292,7 @@ https://www.youtube.com/watch?v=VBfvnKDlZMw:
   - javascript
   - performance
   - talk
+  level: journeyman
 https://www.youtube.com/watch?v=Di-wmjyBQGs:
   name: Climbing the Abstract Syntax Tree
   source: Dutch PHP Conference
@@ -278,6 +302,7 @@ https://www.youtube.com/watch?v=Di-wmjyBQGs:
   - ast
   - php
   - talk
+  level: master
 https://www.youtube.com/watch?v=CFQBHy8RCpg:
   name: ASTs for Beginners
   persons:
@@ -288,6 +313,7 @@ https://www.youtube.com/watch?v=CFQBHy8RCpg:
   - abstract syntax tree
   - talk
   - introduction
+  level: journeyman
 https://www.youtube.com/watch?v=9ZyA_fTgufk:
   name: PHP Array, Assoc Array and Array Functions
   tags:
@@ -297,6 +323,7 @@ https://www.youtube.com/watch?v=9ZyA_fTgufk:
   - introduction
   persons:
   - Kevin Skoglund
+  level: apprentice
 https://www.youtube.com/watch?v=u1i_pNAYD0s:
   name: Avoiding the Agile Alignment Trap with DevOps
   source: NDC Conference
@@ -308,6 +335,7 @@ https://www.youtube.com/watch?v=u1i_pNAYD0s:
   - mindset
   persons:
   - Mike Long
+  level: lead
 https://www.youtube.com/watch?v=8d2AtAGJPno:
   name: Extremely Defensive PHP
   source: PHP South West UK
@@ -319,6 +347,7 @@ https://www.youtube.com/watch?v=8d2AtAGJPno:
   - design
   persons:
   - Marco Pivetta
+  level: journeyman
 https://www.youtube.com/watch?v=SBhgteA2szg:
   name: Acceptance Testing for Continuous Delivery
   source: GOTO Conference
@@ -330,6 +359,7 @@ https://www.youtube.com/watch?v=SBhgteA2szg:
   - architecture
   - domain specific language
   - continous delivery
+  level: journeyman
 https://www.youtube.com/watch?v=myQr6VsT2GE:
   name: 'Performance Optimization: How Do I Go About It?'
   tags:
@@ -342,6 +372,7 @@ https://www.youtube.com/watch?v=myQr6VsT2GE:
   source: PHP UK
   persons:
   - Kat Zien
+  level: journeyman
 https://www.youtube.com/watch?v=86Tt2pW9pv4:
   name: Introduction to SOLID
   tags:
@@ -352,6 +383,7 @@ https://www.youtube.com/watch?v=86Tt2pW9pv4:
   source: PHP UK
   persons:
   - Gareth Ellis
+  level: apprentice
 https://www.youtube.com/watch?v=oqd9bxy5Hvc:
   name: Secure Coding Patterns
   tags:
@@ -364,6 +396,7 @@ https://www.youtube.com/watch?v=oqd9bxy5Hvc:
   source: GOTO Conference
   persons:
   - Andreas Hallberg
+  level: journeyman
 https://www.youtube.com/watch?v=X0tjziAQfNQ:
   name: 10 Tips for failing badly at Microservices
   tags:
@@ -373,3 +406,4 @@ https://www.youtube.com/watch?v=X0tjziAQfNQ:
   source: Devoxx
   persons:
   - David Schmitz
+  level: master

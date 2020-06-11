@@ -23,12 +23,18 @@
         },
         "source": {
           "type": "string"
+        },
+        "level": {
+          "type": "string",
+          "enum": ["any", "apprentice", "journeyman", "master", "lead"],
+          "default": "any"
         }
       },
       "additionalProperties": false,
       "required": [
         "name",
-        "tags"
+        "tags",
+        "level"
       ]
     }
   },
