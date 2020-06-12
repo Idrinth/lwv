@@ -407,3 +407,16 @@ https://www.youtube.com/watch?v=X0tjziAQfNQ:
   persons:
   - David Schmitz
   level: master
+https://www.youtube.com/watch?v=IKFq2cSbQ4Q:
+  name: Organizing CSS with OOCSS, SMACSS, and BEM
+  level: apprentice
+  source: Gainesville Front-end Developers Meetup
+  persons:
+  - Matt Stauffer
+  tags:
+  - css
+  - scss
+  - talk
+  - architecture
+  - solid
+  - naming
