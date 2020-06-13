@@ -23,4 +23,12 @@ jobs:
     install:
     - npm i -g eslint
     script:
-    - eslint main.js
+    - eslint src/*.js
+  - language: node_js
+    node_js: node
+    stage: Linting
+    name: Stylelint
+    install:
+    - npm i -g stylelint stylelint-config-standard stylelint-config-sass-guidelines
+    script:
+    - stylelint "src/*.*css"
