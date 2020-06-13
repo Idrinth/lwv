@@ -1,4 +1,4 @@
-/* global YAML */
+/* global YAML,Sass */
 
 (() => {
     /**
@@ -20,9 +20,9 @@
             }
         }
         window.location.hash = tag;
-    }
+    };
     /* On click on a list element filter for it's text content */
-    document.getElementsByTagName('body')[0].addEventListener('click', function (/* ClickEvent */ e) {
+    document.getElementsByTagName('body')[0].addEventListener('click', (/* ClickEvent */ e) => {
         e = e || event || window.event;
         if (e.target.nodeName === 'LI' && e.target.innerHTML === e.target.innerText) {
             filterForTag(e.target.innerText);
@@ -34,6 +34,18 @@
     if ("onhashchange" in window) {
         window.onhashchange = () => filterForTag(window.location.hash);
     }
+    (async () => {
+        const response = await fetch('styles.scss');
+        if (response.ok) {
+            const scss = await response.text();
+            Sass.compile(scss, (result) => {
+                const head = document.getElementsByTagName('head')[0];
+                const style = document.createElement('style');
+                style.innerHTML = result.text;
+                head.appendChild(style);
+            });
+        }
+    })();
     /**
      * Retrieve data from data.yml and build page from it
      */
@@ -53,17 +65,18 @@
                 listElement.appendChild((() => {
                     let item = document.createElement('li');
                     item.setAttribute('class', className + ' filter');
+                    item.setAttribute('title', 'Filter for ' + className + ' ' + tag);
                     item.appendChild(document.createTextNode(tag));
                     return item;
                 })());
             }
         };
         const createLink = (/*String*/text, /*String*/url) => {
-                const a = document.createElement('a');
-                a.setAttribute('href', url);
-                a.appendChild(document.createTextNode(text));
-                return a;
-        }
+            const a = document.createElement('a');
+            a.setAttribute('href', url);
+            a.appendChild(document.createTextNode(text));
+            return a;
+        };
         const response = await fetch('data.yml');
         /* Checks status code */
         if (!response.ok) {
@@ -75,6 +88,7 @@
         for (const url in data) {
             /* The Element of the main list */
             const li = document.createElement('li');
+            li.setAttribute('class', 'tagged-item')
             li.appendChild(createLink(data[url].name, url));
             /* given source add new source to global list */
             if (data[url].source && !filters.source.includes(data[url].source)) {
@@ -99,6 +113,7 @@
             /* Create the actually displayed list element */
             li.appendChild((() => {
                 let tags = document.createElement('ul');
+                tags.setAttribute('class', 'filters');
                 appendTags(data[url].tags, 'tag', tags);
                 appendTags(data[url].persons, 'person', tags);
                 appendTags([data[url].source], 'source', tags);
@@ -108,14 +123,7 @@
         }
         /* Build the filter lists */
         for (const type in filters) {
-            for (const name of filters[type]) {
-                document.getElementById('filters-' + type).appendChild((() => {
-                    let item = document.createElement('li');
-                    item.setAttribute('class', type + ' filter');
-                    item.appendChild(document.createTextNode(name));
-                    return item;
-                })());
-            }
+            appendTags(filters[type], type, document.getElementById('filters-' + type));
         }
         /* If the page was loaded with a hash, consider it a tag to filter for */
         if (window.location.hash) {

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Links worth visiting</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="libs/reset.css"/>
         <base target="_blank"/>
     </head>
     <body>
@@ -13,19 +13,21 @@
         <p>The following links are considered useful by <a href="https://github.com/idrinth">me</a> and collected here because I need them on a regular basis.</p>
         <p>If you believe something is missing, feel free to <a href="https://github.com/idrinth/lwv/">propose</a> it.</p>
         <ul id="main"></ul>
-        <aside>
+        <aside class="fixed">
             <h2>Tags</h2>
             <ul id="filters-tag"></ul>
         </aside>
-        <aside>
+        <aside class="fixed">
             <h2>Persons</h2>
             <ul id="filters-person"></ul>
         </aside>
-        <aside>
+        <aside class="fixed">
             <h2>Sources</h2>
             <ul id="filters-source"></ul>
         </aside>
-        <script src="yaml.min.js"></script>
+        <script src="libs/yaml.min.js"></script>
+        <script src="libs/sass.js"></script>
+        <script src="libs/sass.worker.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
