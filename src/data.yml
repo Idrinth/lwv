@@ -425,3 +425,23 @@ https://www.youtube.com/watch?v=qrduUUdxBSY:
   - css
   - units
   - tutorial
+https://speakerdeck.com/tianyupu/the-zen-of-git:
+  name: The Zen of Git
+  level: master
+  persons:
+  - Tianyu Pu
+  tags:
+  - git
+  - version control system
+  - Tutorial
+https://nvie.com/posts/a-successful-git-branching-model/:
+  name: A successful Git branching model
+  level: journeyman
+  persons:
+  - Vincent Driessen
+  tags:
+  - git
+  - version control system
+  - blog
+  - branching
+  - workflow
