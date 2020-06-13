@@ -35,7 +35,7 @@
         window.onhashchange = () => filterForTag(window.location.hash);
     }
     (async () => {
-        const response = await fetch('styles.scss');
+        const response = await fetch('src/styles.scss');
         if (response.ok) {
             const scss = await response.text();
             Sass.compile(scss, (result) => {
@@ -77,7 +77,7 @@
             a.appendChild(document.createTextNode(text));
             return a;
         };
-        const response = await fetch('data.yml');
+        const response = await fetch('src/data.yml');
         /* Checks status code */
         if (!response.ok) {
             return;
