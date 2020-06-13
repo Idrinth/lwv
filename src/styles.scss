@@ -134,12 +134,25 @@ a {
   transition-property: width, height, transform, right;
   width: 15em;
 
+  > ul {
+    display: none;
+
+    > .filter {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
   &:hover {
     overflow-y: scroll;
     right: -1em;
     transform: none;
     width: 15em;
     z-index: 111;
+
+    > ul {
+      display: block;
+    }
   }
 
   &:nth-of-type(1) {
@@ -152,11 +165,6 @@ a {
 
   &:nth-of-type(3) {
     top: 66%;
-  }
-
-  ul > .filter {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
