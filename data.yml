@@ -171,7 +171,6 @@ https://www.youtube.com/watch?v=SLWpMGs1E9E:
   - enterprise software
   persons:
   - Sumeet Jain
-  level: lead
 https://www.youtube.com/watch?v=CXyNZYDO07Q:
   name: Technical debt isn't technical
   source: NDC Conference
@@ -219,7 +218,6 @@ https://www.youtube.com/watch?v=D-xra_X9Nwg:
   - continous integration
   persons:
   - Trisha Gee
-  level: journeyman
 https://www.youtube.com/watch?v=pTf5mqOrwvY:
   name: Building a High-Performance Team is Everyone's Job
   level: any
@@ -231,7 +229,6 @@ https://www.youtube.com/watch?v=pTf5mqOrwvY:
   - organization
   persons:
   - Camille Fournier
-  level: any
 https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc:
   name: Design Patterns in Object Oriented Programming
   level: apprentice
@@ -420,3 +417,11 @@ https://www.youtube.com/watch?v=IKFq2cSbQ4Q:
   - architecture
   - solid
   - naming
+https://www.youtube.com/watch?v=qrduUUdxBSY:
+  name: 'CSS Units (CSS Lengths: rems, ems, pixels, percents, and more)'
+  level: apprentice
+  source: DevTips
+  tags:
+  - css
+  - units
+  - tutorial
