@@ -445,3 +445,13 @@ https://nvie.com/posts/a-successful-git-branching-model/:
   - blog
   - branching
   - workflow
+https://medium.com/palantir/code-review-best-practices-19e02780015f:
+  name: Code Review Best Practices
+  level: ?
+  persons:
+  - Robert Fink
+  source: Palantir
+  tags:
+  - code review
+  - best practice
+  - blog
