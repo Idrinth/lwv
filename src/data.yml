@@ -447,7 +447,7 @@ https://nvie.com/posts/a-successful-git-branching-model/:
   - workflow
 https://medium.com/palantir/code-review-best-practices-19e02780015f:
   name: Code Review Best Practices
-  level: ?
+  level: any
   persons:
   - Robert Fink
   source: Palantir
@@ -455,3 +455,16 @@ https://medium.com/palantir/code-review-best-practices-19e02780015f:
   - code review
   - best practice
   - blog
+https://www.youtube.com/watch?v=qjtMs7jQxEo:
+  name: Writing Code You Won't Hate Tomorrow
+  source: ConFoo Developer Conference
+  level: apprentice
+  persons:
+  - Rafael Dohms
+  tags:
+  - talk
+  - legacy
+  - improvement
+  - refactoring
+  - solid
+  - readability
