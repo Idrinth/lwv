@@ -15,7 +15,7 @@
    */
   const filterForTag = (/* String */ tag,) => {
     if (! tag || tag === '#') {
-      window.location.hash = '';
+      //window.location.hash = '';
       return;
     }
     /**
@@ -23,24 +23,29 @@
      * @param {HTMLElement} li
      * @returns {undefined}
      */
-    const checkTags = (/* HTMLElement */ li,) => {
+    const checkTags = (/* HTMLElement */ li,/* string|null */type, /* string */ value) => {
       if (li.nodeName !== 'LI') {
         return;
       }
+      const types = type === null ? ['level', 'tag', 'source', 'person'] : [type];
       li.setAttribute('style', 'display:none',);
-      for (const tagEl of li.getElementsByTagName('li',)) {
-        if (tagEl.innerText.replace(/ /gu, '_',).toLowerCase() === tag) {
+      const list = li.lastChild;
+      for (const attr of types) {
+        if (list.hasAttribute('data-' + attr) && list.getAttribute('data-' + attr).split(' ').includes(value)) {
           li.removeAttribute('style',);
           return;
         }
       }
     };
-    tag = tag.replace(/ /gu, '_',).toLowerCase()
-      .replace(/^#/u, '',);
-    for (const li of document.getElementById('main',).children) {
-      checkTags(li,);
+    tag = tag.replace(/ /gu, '_', ).toLowerCase()
+      .replace(/^#/u, '',).split(':');
+    if (tag.length === 1) {
+      tag.unshift(null);
     }
-    window.location.hash = tag;
+    for (const li of document.getElementById('main',).children) {
+      checkTags(li,tag[0], tag[1]);
+    }
+    //window.location.hash = tag;
   };
   /* On click on a list element filter for it's text content */
   getFirst('body',).addEventListener(
@@ -48,7 +53,9 @@
     (/* ClickEvent */ e,) => {
       e = e || event || window.event;
       if (e.target.classList.contains('filter',)) {
-        filterForTag(e.target.innerText,);
+        const filter = e.target.getAttribute('data-type') + ':' + e.target.getAttribute('data-value');
+        window.location.hash = filter;
+        filterForTag(filter,);
       }
     },
   );
@@ -97,8 +104,13 @@
         listElement.appendChild((() => {
           const item = document.createElement('li',);
           item.setAttribute('class', className + ' filter',);
+          item.setAttribute('data-type', className,);
           item.setAttribute('title', 'Filter for ' + className + ' ' + tag,);
           item.appendChild(document.createTextNode(tag,),);
+          item.setAttribute('data-value', tag.replace(/ /g, '_').toLowerCase(),);
+          const attribute = 'data-'+className;
+          let previous = listElement.hasAttribute(attribute,) ? listElement.getAttribute(attribute,) + ' ' : '';
+          listElement.setAttribute(attribute, previous + tag.replace(/ /g, '_').toLowerCase(),);
           return item;
         })(),);
       };
@@ -125,6 +137,7 @@
       person: [],
       source: [],
       tag: [],
+      level: [],
     };
     const main = document.getElementById('main',);
     const buildElement = (url, item,) => {
@@ -143,6 +156,8 @@
       li.appendChild(createLink(item.name, url,),);
       /* given source add new source to global list */
       addFilter([ item.source, ], 'source',);
+      /* given level add new level to global list */
+      addFilter([ item.level, 'any'], 'level',);
       /* given tags add all new tags to global list */
       addFilter(item.tags, 'tag',);
       /* given persons add all new persons to global list*/
@@ -154,6 +169,8 @@
         appendTags(item.tags, 'tag', tags,);
         appendTags(item.persons, 'person', tags,);
         appendTags([ item.source, ], 'source', tags,);
+        appendTags(item.level === 'any' ? [] : [ item.level], 'level', tags,);
+        tags.setAttribute('data-level', tags.getAttribute('data-level')+' any');
         return tags;
       })(),);
       main.appendChild(li,);

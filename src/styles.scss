@@ -27,6 +27,7 @@
 $text: #000;
 $tag: #007;
 $person: #777;
+$level: #070;
 $source: #700;
 $background: #ddd;
 
@@ -88,6 +89,10 @@ a {
     background-color: $person;
   }
 
+  &.level {
+    background-color: $level;
+  }
+
   &.source {
     background-color: $source;
   }
@@ -119,20 +124,24 @@ a {
   }
 }
 
+.filter-bar {
+  position: fixed;
+  bottom: 0;
+  height: 3em;
+  display: none;
+  z-index: 111;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 100%;
+}
 .fixed {
   @include separated-box;
   @include shadowed;
 
-  display: none;
   height: 15em;
   overflow: hidden;
-  position: fixed;
-  right: -13em;
-  transform: rotate(270deg);
-  transform-origin: center;
-  transition-duration: 0.2s;
-  transition-property: width, height, transform, right;
   width: 15em;
+  float: left;
+  margin-bottom: -12em;
 
   > ul {
     display: none;
@@ -147,8 +156,8 @@ a {
     overflow-y: scroll;
     right: -1em;
     transform: none;
-    width: 15em;
-    z-index: 111;
+    margin-bottom: 0;
+    margin-top: -12em;
 
     > ul {
       display: block;
@@ -188,8 +197,9 @@ a {
     min-height: calc(100% - 3em);
   }
 
-  .fixed {
+  .filter-bar {
     display: block;
+    display: grid;
   }
 }
 
