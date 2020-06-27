@@ -79,7 +79,7 @@ a:focus {
 }
 
 a::after {
-  content: "\21F1";
+  content: '\21F1';
   font-size: 50%;
   vertical-align: top;
 }
@@ -136,23 +136,24 @@ a::after {
 }
 
 .filter-bar {
-  position: fixed;
   bottom: 0;
-  height: 3em;
   display: none;
-  z-index: 111;
   grid-template-columns: 25% 25% 25% 25%;
+  height: 3em;
+  position: fixed;
   width: 100%;
+  z-index: 111;
 }
+
 .fixed {
   @include separated-box;
   @include shadowed;
 
+  float: left;
   height: 15em;
+  margin-bottom: -12em;
   overflow: hidden;
   width: 15em;
-  float: left;
-  margin-bottom: -12em;
 
   > ul {
     display: none;
@@ -164,11 +165,11 @@ a::after {
   }
 
   &:hover {
+    margin-bottom: 0;
+    margin-top: -12em;
     overflow-y: scroll;
     right: -1em;
     transform: none;
-    margin-bottom: 0;
-    margin-top: -12em;
 
     > ul {
       display: block;

@@ -5,6 +5,16 @@
     nearInstant: 1,
     firstElement: 0,
   };
+  const withDefault = (
+    /* HTMLElement */ element,
+    /* string */ attribute,
+    /* string */ value,
+  ) => {
+    if (element.hasAttribute(attribute,)) {
+      return element.getAttribute(attribute,);
+    }
+    return value;
+  };
   const getFirst = (
     /* String */tagName,
   ) => document.getElementsByTagName(tagName,)[CONSTANTS.firstElement];
@@ -14,8 +24,14 @@
    * @returns {undefined}
    */
   const filterForTag = (/* String */ tag,) => {
-    document.getElementsByTagName('title')[0].innerText = tag.replace(/^(.+):(.+)$/gu, '$2 | $1') + ' | Links worth visiting';
-    document.getElementsByTagName('title')[0].innerText = document.getElementsByTagName('title')[0].innerText.replace('#', '').replace(/_/gu, ' ').replace(/^ \| /gu, '');
+    getFirst('title',).innerText = (() => {
+      const title = tag.replace(/^(.+):(.+)$/gu, '$2 [$1]',)
+        + ' | Links worth visiting';
+      return title
+        .replace('#', '',)
+        .replace(/_/gu, ' ',)
+        .replace(/^ \| /gu, '',);
+    })();
     if (! tag || tag === '#') {
       return;
     }
@@ -24,27 +40,41 @@
      * @param {HTMLElement} li
      * @returns {undefined}
      */
-    const checkTags = (/* HTMLElement */ li,/* string|null */type, /* string */ value) => {
+    const checkTags = (
+      /* HTMLElement */ li,
+      /* string|null */type,
+      /* string */ value,
+    ) => {
+      const hasAny = (/* HTMLElement */ el, /**/ types,) => {
+        for (const attr of types) {
+          if (withDefault(el, 'data-' + attr, '',).split(' ',)
+            .includes(value,)) {
+            return true;
+          }
+        }
+        return false;
+      };
       if (li.nodeName !== 'LI') {
         return;
       }
-      const types = type === null ? ['level', 'tag', 'source', 'person'] : [type];
-      li.setAttribute('style', 'display:none',);
-      const list = li.lastChild;
-      for (const attr of types) {
-        if (list.hasAttribute('data-' + attr) && list.getAttribute('data-' + attr).split(' ').includes(value)) {
-          li.removeAttribute('style',);
-          return;
-        }
-      }
+      const types = type === null ? [
+        'level',
+        'tag',
+        'source',
+        'person',
+      ] : [ type, ];
+      li.setAttribute(
+        'style',
+        hasAny(li.lastChild, types,) ? '' : 'display:none',
+      );
     };
-    tag = tag.replace(/ /gu, '_', ).toLowerCase()
-      .replace(/^#/u, '',).split(':');
-    if (tag.length === 1) {
-      tag.unshift(null);
-    }
+    const filter = tag.replace(/ /gu, '_', ).toLowerCase()
+      .replace(/^#/u, '',)
+      .split(':',);
+    const textFilter = filter.pop();
+    const typeFilter = filter.length ? filter.pop() : null;
     for (const li of document.getElementById('main',).children) {
-      checkTags(li,tag[0], tag[1]);
+      checkTags(li, typeFilter, textFilter,);
     }
   };
   /* On click on a list element filter for it's text content */
@@ -53,7 +83,7 @@
     (/* ClickEvent */ e,) => {
       e = e || event || window.event;
       if (e.target.classList.contains('filter',)) {
-        const filter = e.target.getAttribute('data-type') + ':' + e.target.getAttribute('data-value');
+        const filter = e.target.getAttribute('data-needle',);
         window.location.hash = filter;
         filterForTag(filter,);
       }
@@ -85,6 +115,18 @@
    * Retrieve data from data.yml and build page from it
    */
   (async() => {
+    const appendToList = (
+      /* HTMLElement */ element,
+      /* string */ attribute,
+      /* string */ value,
+    ) => {
+      const prev = withDefault(element, attribute, '',);
+      const items = prev.split(' ',);
+      if (! items.includes(value,)) {
+        items.push(value,);
+      }
+      element.setAttribute(attribute, items.join(' ',),);
+    };
     /* add all tags as clickable items to the list element */
     const appendTags = (
       /*String[]*/ list,
@@ -104,13 +146,15 @@
         listElement.appendChild((() => {
           const item = document.createElement('li',);
           item.setAttribute('class', className + ' filter',);
-          item.setAttribute('data-type', className,);
           item.setAttribute('title', 'Filter for ' + className + ' ' + tag,);
           item.appendChild(document.createTextNode(tag,),);
-          item.setAttribute('data-value', tag.replace(/ /g, '_').toLowerCase(),);
-          const attribute = 'data-'+className;
-          let previous = listElement.hasAttribute(attribute,) ? listElement.getAttribute(attribute,) + ' ' : '';
-          listElement.setAttribute(attribute, previous + tag.replace(/ /g, '_').toLowerCase(),);
+          const needle = tag.replace(/ /gu, '_',).toLowerCase();
+          item.setAttribute('data-needle', className + ':' + needle,);
+          appendToList(
+            listElement,
+            'data-'+className,
+            needle,
+          );
           return item;
         })(),);
       };
@@ -157,7 +201,10 @@
       /* given source add new source to global list */
       addFilter([ item.source, ], 'source',);
       /* given level add new level to global list */
-      addFilter([ item.level, 'any'], 'level',);
+      addFilter([
+        item.level,
+        'any',
+      ], 'level',);
       /* given tags add all new tags to global list */
       addFilter(item.tags, 'tag',);
       /* given persons add all new persons to global list*/
@@ -169,8 +216,10 @@
         appendTags(item.tags, 'tag', tags,);
         appendTags(item.persons, 'person', tags,);
         appendTags([ item.source, ], 'source', tags,);
-        appendTags(item.level === 'any' ? [] : [ item.level], 'level', tags,);
-        tags.setAttribute('data-level', tags.getAttribute('data-level')+' any');
+        if (item.level !== 'any') {
+          appendTags([ item.level, ], 'level', tags,);
+        }
+        appendToList(tags, 'data-level', 'any',);
         return tags;
       })(),);
       main.appendChild(li,);
