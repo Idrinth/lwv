@@ -73,6 +73,17 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+a::after {
+  content: "\21F1";
+  font-size: 50%;
+  vertical-align: top;
+}
+
 .filter {
   @include bar;
   @include shadowed;
