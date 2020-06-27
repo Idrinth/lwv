@@ -14,8 +14,9 @@
    * @returns {undefined}
    */
   const filterForTag = (/* String */ tag,) => {
+    document.getElementsByTagName('title')[0].innerText = tag.replace(/^(.+):(.+)$/gu, '$2 | $1') + ' | Links worth visiting';
+    document.getElementsByTagName('title')[0].innerText = document.getElementsByTagName('title')[0].innerText.replace('#', '').replace(/_/gu, ' ').replace(/^ \| /gu, '');
     if (! tag || tag === '#') {
-      //window.location.hash = '';
       return;
     }
     /**
@@ -45,7 +46,6 @@
     for (const li of document.getElementById('main',).children) {
       checkTags(li,tag[0], tag[1]);
     }
-    //window.location.hash = tag;
   };
   /* On click on a list element filter for it's text content */
   getFirst('body',).addEventListener(
