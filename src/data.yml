@@ -468,3 +468,13 @@ https://www.youtube.com/watch?v=qjtMs7jQxEo:
   - refactoring
   - solid
   - readability
+https://ocramius.github.io/extremely-defensive-php:
+  name: Extremely defensive php
+  level: apprentice
+  person:
+  - Marco Pivetta
+  tags:
+  - php
+  - presentation
+  - defensive programming
+  - code style
