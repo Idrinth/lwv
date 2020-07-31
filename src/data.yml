@@ -471,7 +471,7 @@ https://www.youtube.com/watch?v=qjtMs7jQxEo:
 https://ocramius.github.io/extremely-defensive-php:
   name: Extremely defensive php
   level: apprentice
-  person:
+  persons:
   - Marco Pivetta
   tags:
   - php
