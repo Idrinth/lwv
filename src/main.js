@@ -159,7 +159,7 @@
         })(),);
       };
       for (const tag of list) {
-        appendTag(tag, listElement, className,);
+        appendTag(tag,);
       }
     };
     const createLink = (/*String*/text, /*String*/url,) => {
